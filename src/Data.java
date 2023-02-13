@@ -6,7 +6,9 @@ import java.util.Scanner;
 
 public class Data {
 
-
+//initial code without scanner
+    
+    
     //for week 7 - 2 decimal points & comma for amount
     public static String printNumberWithCommas(double amount) {
         DecimalFormat formatter = new DecimalFormat("##,###.00");
