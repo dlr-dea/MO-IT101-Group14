@@ -1,4 +1,5 @@
 
+//final code with scanner
 
 //scanner
 import javax.swing.plaf.synth.SynthOptionPaneUI;
