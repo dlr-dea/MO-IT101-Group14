@@ -262,7 +262,7 @@ public class Main {
 
         String pass = "******";
         String admin = "admin";
-        String passcode = "admin1234";
+        String passcode = "admin123";
         String dash = "----------------------------------------------------------------";
 
 
