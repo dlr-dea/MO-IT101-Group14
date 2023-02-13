@@ -1,0 +1,29 @@
+
+
+MOTORPH LIST OF EMPLOYEES
+
+EMPLOYEE NO. 		NAMES				POSITION					EMPLOYMENT STATUS		GROSS SEMI-MONTHLY RATE
+10001 			Crisostomo, Jose		HR Manager					Regular					Php 31,335.00
+10002 			Mata, Christian			Account Team Leader			Regular					Php 21,488.00
+10003 			San Jose, Brad			HR Team Leader				Regular					Php 21,488.00
+10004 			Salcedo, Anthony		Payroll Manager				Regular					Php 30,413.00
+10005 			Romualdez, Alice		HR Rank and File			Regular					Php 11,250.00
+10006 			Atienza, Rosie			HR Rank and File			Regular					Php 11,250.00
+10007 			Farala, Martha			Payroll Rank and File		Regular					Php 12,000.00
+10008 			Martinez, Leila			Payroll Rank and File		Regular					Php 12,000.00
+10009 			San Jose, Allison		Account Rank and File		Regular					Php 11,250.00
+10010 			Rosario, Cydney			Account Rank and File		Regular					Php 11,250.00
+10011 			Lopez, Josie			Payroll Team Leader			Regular					Php 19,238.00
+10012 			De leon, Selena			Account Team Leader			Regular					Php 20,925.00
+10013 			Romualdez, Fredrick		Account Manager				Regular					Php 31,750.00
+10014 			Bautista, Mark			Account Rank and File		Regular					Php 11,625.00
+10015 			Lazaro, Darlen			Account Rank and File		Probationary			Php 12,000.00
+10016 			Delos Santos, Kolby		Account Rank and File		Probationary			Php 11,250.00
+10017 			Santos, Vella			Account Rank and File		Probationary			Php 11,250.00
+10018 			Del Rosario, Tomas		Account Rank and File		Probationary			Php 12,000.00
+10019 			Tolentino, Jacklyn		Account Rank and File		Probationary			Php 12,375.00
+10021			Manalaysay, Garfield	Account Rank and File		Probationary			Php 12,375.00
+10022			Villegas, Lizeth		Account Rank and File		Probationary			Php 12,000.00
+10023			Ramos, Carol			Account Rank and File		Probationary			Php 11,250.00
+10024			Maceda Emelia			Account Rank and File		Probationary			Php 11,250.00
+10025			Aguilar, Delia			Account Rank and File 		Probationary			Php 11,250.00
