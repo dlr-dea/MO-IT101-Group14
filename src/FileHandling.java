@@ -2,6 +2,8 @@ import java.io.*;
 
 public class FileHandling {
 
+
+    //file handling class
     public static void main (String[] args) throws IOException {
 
         String employee [] = {"Crisostomo, Jose", "Mata, Christian", "San Jose, Brad",

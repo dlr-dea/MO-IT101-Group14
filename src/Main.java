@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Main {
 
-
+    //main code with scanner
     //for week 7 - 2 decimal points & comma for amount
     public static String printNumberWithCommas(double amount) {
         DecimalFormat formatter = new DecimalFormat("PHP ##,###.00");
