@@ -1,8 +1,6 @@
-
-
 MOTORPH LIST OF EMPLOYEES
 
-EMPLOYEE NO. 		NAMES				POSITION					EMPLOYMENT STATUS		GROSS SEMI-MONTHLY RATE
+EMPLOYEE NO. 	NAMES				    POSITION					EMPLOYMENT STATUS		GROSS SEMI-MONTHLY RATE
 10001 			Crisostomo, Jose		HR Manager					Regular					Php 31,335.00
 10002 			Mata, Christian			Account Team Leader			Regular					Php 21,488.00
 10003 			San Jose, Brad			HR Team Leader				Regular					Php 21,488.00

@@ -310,6 +310,9 @@ public class Main {
             int adminOption = input.nextInt();
             if (adminOption == 1) {
                 System.out.println(dash);
+
+                //file handling
+                //file writer
                 try {
                     BufferedWriter writer = new BufferedWriter( new FileWriter("filehandling.txt"));
                     writer.write("MotorPH List of Employees");
@@ -321,7 +324,7 @@ public class Main {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-
+//file reader
                 try {
                     BufferedReader reader = new BufferedReader(new FileReader("output.txt"));
                     String line;
