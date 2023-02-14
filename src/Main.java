@@ -3,6 +3,7 @@
 
 //scanner
 import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.io.*;
 import java.lang.Math;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -21,6 +22,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //array
+
+        String employee [] = {"Crisostomo, Jose", "Mata, Christian", "San Jose, Brad",
+                "Salcedo, Anthony", "Romualdez, Alice", "Atienza, Rosie", "Farala, Martha",
+                "Martinez, Leila", "San Jose, Allison", "Rosario, Cydney", "Lopez, Josie",
+                "De leon, Selena", "Romualdez, Fredrick", "Bautista, Mark", "Lazaro, Darlen",
+                "Delos Santos, Kolby", "Santos, Vella", "Del Rosario, Tomas", "Tolentino, Jacklyn",
+                "Gutierrez, Percival"};
 
 // Title per task/s
         final String companyName = "MOTOR PH DATABASE";
@@ -283,8 +292,9 @@ public class Main {
                 System.out.println("Username: " + admin);
                 System.out.println("Password: " + pass);
                 System.out.println(dash);
-                System.out.println("MOTORPH PAYROLL SYSTEM" + "\n" + "(1) Employee's Profile" + "\n" +
-                        "(2) Time Keeping" + "\n" + "(3) Salary Computation" + "\n" + "(4) Logout");
+                System.out.println("MOTORPH PAYROLL SYSTEM" + "\n" + "(1) List of Employees" + "\n"+
+                        "(2) Employee's Profile" + "\n" +
+                        "(3) Time Keeping" + "\n" + "(4) Salary Computation" + "\n" + "(5) Logout");
                 break;
             } else if (count < 4) {
                 System.out.println("Incorrect password, please try again!");
@@ -300,6 +310,34 @@ public class Main {
             int adminOption = input.nextInt();
             if (adminOption == 1) {
                 System.out.println(dash);
+                try {
+                    BufferedWriter writer = new BufferedWriter( new FileWriter("filehandling.txt"));
+                    writer.write("MotorPH List of Employees");
+
+                    for (String name : employee) {
+                        writer.write("\n" + name);
+                    }
+                    writer.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+
+                try {
+                    BufferedReader reader = new BufferedReader(new FileReader("output.txt"));
+                    String line;
+                    while((line = reader.readLine()) != null) {
+                        System.out.println(line);
+                    }
+                    System.out.println(reader.readLine());
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+
+                }
+                System.out.println(dash);
+
+            } else if (adminOption == 2) {
+
                 System.out.println("EMPLOYEE'S PROFILE" + "\n" + "(1) " + id + "\n" + "(2) " + id1 + "\n" +
                         "(3) " + id2);
 
@@ -343,7 +381,7 @@ public class Main {
                             "\n" + clothingAllowanceTitle + ":" + "\t" + printNumberWithCommas(clothingAllowance2));
                 }
 
-            } else if (adminOption == 2) {
+            } else if (adminOption == 3) {
                 System.out.println(dash);
                 System.out.println(hoursWorked);
                 System.out.println(week);
@@ -357,7 +395,7 @@ public class Main {
                 System.out.println(id2 + tabs + "\t\t" + lastName2 + tabs + "\t" + firstName + tabs + "\t" + position2 +
                         "\t\t" + totalWHours2);
 
-            } else if (adminOption == 3) {
+            } else if (adminOption == 4) {
                 System.out.println(dash);
                 System.out.println("SALARY COMPUTATION" + "\n" + "(1) " + id + "\n" + "(2) " + id1 + "\n" + "(3) " + id2);
                 int salaryComputation = input.nextInt();
@@ -465,7 +503,7 @@ public class Main {
                     System.out.println("***CONFIDENTIAL***");
 
                 }
-            } else if (adminOption == 4) {
+            } else if (adminOption == 5) {
                 System.out.println(dash);
                 System.out.println("PLEASE LOG IN AGAIN!");
                 System.out.println(dash);
