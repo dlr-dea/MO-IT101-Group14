@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Main {
 
     //final code for submission with scanner and file handling
+    //for submission
 
     //for week 7 - 2 decimal points & comma for amount
     public static String printNumberWithCommas(double amount) {
