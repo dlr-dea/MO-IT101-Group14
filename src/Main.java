@@ -296,6 +296,8 @@ public class Main {
                 System.out.println("MOTORPH PAYROLL SYSTEM" + "\n" + "(1) List of Employees" + "\n"+
                         "(2) Employee's Profile" + "\n" +
                         "(3) Time Keeping" + "\n" + "(4) Salary Computation" + "\n" + "(5) Logout");
+                System.out.println(dash);
+
                 break;
             } else if (count < 4) {
                 System.out.println("Incorrect password, please try again!");
@@ -344,6 +346,7 @@ public class Main {
 
                 System.out.println("EMPLOYEE'S PROFILE" + "\n" + "(1) " + id + "\n" + "(2) " + id1 + "\n" +
                         "(3) " + id2);
+                System.out.println(dash);
 
                 int idNoEmployeeProfile = input.nextInt();
                 if (idNoEmployeeProfile == 1) {
@@ -358,6 +361,7 @@ public class Main {
                             printNumberWithCommas(riceSubsidy) + "\n" + phoneAllowanceTitle + ":" + "\t" +
                             printNumberWithCommas(phoneAllowance) + "\n" + clothingAllowanceTitle + ":" + "\t" +
                             printNumberWithCommas(clothingAllowance));
+                    System.out.println(dash);
                 } else if (idNoEmployeeProfile == 2) {
                     System.out.println(dash);
                     System.out.println("EMPLOYEE DETAILS" + "\n" + fullNameTitle + ":" + tabs + fullName1 + "\n" +
@@ -371,6 +375,7 @@ public class Main {
                             printNumberWithCommas(riceSubsidy1) + "\n" + phoneAllowanceTitle + ":" +
                             "\t" + printNumberWithCommas(phoneAllowance1) + "\n" + clothingAllowanceTitle + ":" + "\t" +
                             printNumberWithCommas(clothingAllowance1));
+                    System.out.println(dash);
                 } else if (idNoEmployeeProfile == 3) {
                     System.out.println(dash);
                     System.out.println("EMPLOYEE DETAILS" + "\n" + fullNameTitle + ":" + tabs + fullName2 +
@@ -383,12 +388,14 @@ public class Main {
                             riceSubsidyTitle + ":" + "\t\t" + printNumberWithCommas(riceSubsidy2) + "\n" +
                             phoneAllowanceTitle + ":" + "\t" + printNumberWithCommas(phoneAllowance2) +
                             "\n" + clothingAllowanceTitle + ":" + "\t" + printNumberWithCommas(clothingAllowance2));
+                    System.out.println(dash);
                 }
 
             } else if (adminOption == 3) {
                 System.out.println(dash);
                 System.out.println(hoursWorked);
                 System.out.println(week);
+                System.out.println(dash);
 
                 System.out.println(idTitle + tabs + lastNameTitle + "\t" + tabs + firstNameTitle + tabs +
                         positionTitle + tabs + "\t" + hoursWorked);
@@ -398,27 +405,39 @@ public class Main {
                         "\t\t" + totalWHours1);
                 System.out.println(id2 + tabs + "\t\t" + lastName2 + tabs + "\t" + firstName + tabs + "\t" + position2 +
                         "\t\t" + totalWHours2);
+                System.out.println(dash);
 
             } else if (adminOption == 4) {
                 System.out.println(dash);
-                System.out.println("SALARY COMPUTATION" + "\n" + "(1) " + id + "\n" + "(2) " + id1 + "\n" + "(3) " + id2);
+                System.out.println("SALARY COMPUTATION" + "\n" + "(1) " + id + "\n" + "(2) " + id1 + "\n" + "(3) "
+                        + id2);
+                System.out.println(dash);
                 int salaryComputation = input.nextInt();
                 if (salaryComputation == 1) {
                     System.out.println("EMPLOYEE DETAILS" + "\n" + idTitle + ":" + "\t" + id + "\n" + fullNameTitle +
                             ":" + tabs + fullName + "\n" + statusTitle + ":" + tabs + "\t" + status +
                             "\n" + positionTitle + ":" + tabs + position);
+                    System.out.println(dash);
+                    System.out.println("Input employee number to continue");
+                    System.out.println(dash);
 
                 } else if (salaryComputation == 2) {
                     System.out.println(dash);
                     System.out.println("EMPLOYEE DETAILS" + "\n" + idTitle + ":" + "\t" + id1 + "\n" +
                             fullNameTitle + ":" + tabs + fullName1 + "\n" + statusTitle + ":" + tabs + "\t" +
                             status1 + "\n" + positionTitle + ":" + tabs + position1);
+                    System.out.println(dash);
+                    System.out.println("Input employee number to continue");
+                    System.out.println(dash);
 
                 } else if (salaryComputation == 3) {
                     System.out.println(dash);
                     System.out.println("EMPLOYEE DETAILS" + "\n" + idTitle + ":" + "\t" + id2 + "\n" +
                             fullNameTitle + ":" + tabs + fullName2 + "\n" + statusTitle + ":" +
                             tabs + "\t" + status2 + "\n" + positionTitle + ":" + tabs + position2);
+                    System.out.println(dash);
+                    System.out.println("Input employee number to continue");
+                    System.out.println(dash);
                 }
                 int salary = input.nextInt();
                 if (salary == 10001) {
@@ -447,7 +466,9 @@ public class Main {
                             printNumberWithCommas(weeklyNetIncome));
                     System.out.println();
                     System.out.println();
+                    System.out.println(dash);
                     System.out.println("***CONFIDENTIAL***");
+                    System.out.println(dash);
 
                 } else if (salary == 10002) {
                     System.out.println(dash);
@@ -476,7 +497,9 @@ public class Main {
                             printNumberWithCommas(weeklyNetIncome1));
                     System.out.println();
                     System.out.println();
+                    System.out.println(dash);
                     System.out.println("***CONFIDENTIAL***");
+                    System.out.println(dash);
 
                 } else if (salary == 10003) {
                     System.out.println(dash);
@@ -504,12 +527,14 @@ public class Main {
                             printNumberWithCommas(weeklyNetIncome2));
                     System.out.println();
                     System.out.println();
+                    System.out.println(dash);
                     System.out.println("***CONFIDENTIAL***");
+                    System.out.println(dash);
 
                 }
             } else if (adminOption == 5) {
                 System.out.println(dash);
-                System.out.println("PLEASE LOG IN AGAIN!");
+                System.out.println("THANK YOU! PLEASE LOG IN AGAIN!");
                 System.out.println(dash);
             }
 
